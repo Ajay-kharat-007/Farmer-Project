@@ -10,13 +10,14 @@ import { NopageComponent } from './components/nopage/nopage.component';
 import { ContentComponent } from './components/content/content.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'privacy', component: PrivacypolicyComponent },
   { path: 'disclaimer', component: DisclaimerComponent },
   { path: 'terms', component: TermsAndConditionComponent },
-  { path: 'content', component: ContentComponent },
+  { path: 'content/:id', component: ContentComponent },
   { path: '**', component: NopageComponent }
 ];
 

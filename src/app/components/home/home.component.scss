@@ -1,0 +1,20 @@
+.page-area {
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    min-height: 400px;
+    background-color: rgba(248, 248, 248, 0.22);
+}
+
+.card{
+    display: inline-block;
+    box-sizing: border-box;
+    overflow: auto;
+    margin: 0 10px 10px;
+    width: 48%;
+    max-height: 650px;
+    font-size: 28px;
+    a{
+        font-size: 25px;
+    }
+}

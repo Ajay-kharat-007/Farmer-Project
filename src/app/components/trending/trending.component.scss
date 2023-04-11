@@ -1,0 +1,18 @@
+.box {
+    height: 630px;
+    min-width: 480px;
+    border-radius: 25px;
+    box-sizing: border-box;
+    overflow: auto;
+    padding: 20px;
+
+    p {
+        a {
+            text-decoration: none;
+            margin: 30px 0;
+        }
+        font-size: 22px;
+        margin: 25px 20px;
+        color: rgb(59, 59, 255);
+    }
+}

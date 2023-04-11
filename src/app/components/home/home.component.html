@@ -1,1 +1,19 @@
-<p>home works!</p>
+<div class="page-area">
+    <h2 class="text-center">
+        Trending Section
+    </h2>
+    <hr style="width: 300px; margin: 20px auto; border: 3px solid black;">
+    <div class="row">
+        <div class="col-md-12">
+            <ng-container *ngFor="let item of trendings">
+                <div class="card">
+                    <img src="https://source.unsplash.com/random/400×500/?{{item.img}}" height="400px" class="card-img-top" alt="Image">
+                    <div class="card-body">
+                        <div class="card-title">{{item.title}}</div>
+                        <a routerLink="/content" class="btn btn-primary">Visit Site</a>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</div>

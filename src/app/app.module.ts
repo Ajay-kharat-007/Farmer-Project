@@ -14,6 +14,8 @@ import { DisclaimerComponent } from './components/disclaimer/disclaimer.componen
 import { TermsAndConditionComponent } from './components/terms-and-condition/terms-and-condition.component';
 import { NopageComponent } from './components/nopage/nopage.component';
 import { ContentComponent } from './components/content/content.component';
+import { TrendingComponent } from './components/trending/trending.component';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -27,12 +29,14 @@ import { ContentComponent } from './components/content/content.component';
     DisclaimerComponent,
     TermsAndConditionComponent,
     NopageComponent,
-    ContentComponent
+    ContentComponent,
+    TrendingComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
